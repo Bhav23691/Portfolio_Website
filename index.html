@@ -171,7 +171,20 @@ button { font-family: inherit; cursor: pointer; }
 }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.hero-visual { display: flex; justify-content: center; }
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--surface);
+  box-shadow: 0 12px 28px -10px var(--shadow), 0 0 0 3px var(--accent);
+}
 .hero-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -490,7 +503,9 @@ button { font-family: inherit; cursor: pointer; }
         <a href="#experience" class="btn btn-outline">View experience</a>
       </div>
     </div>
-    <div class="hero-visual" aria-hidden="true">
+    <div class="hero-visual">
+      <!-- Profile photo: replace src="profile.jpg" with your own photo file placed in the same folder -->
+      <img class="profile-photo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzBEOTQ4OCIvPgogIDx0ZXh0IHg9IjEwMCIgeT0iMTIyIiBmb250LWZhbWlseT0iUG9wcGlucywgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzAiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiNmZmZmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkJBPC90ZXh0Pgo8L3N2Zz4=" alt="Bhav Aggarwal profile photo" width="140" height="140">
       <div class="hero-card">
         <div class="hero-card-row"><span class="dot"></span> Data Entry</div>
         <div class="hero-card-row"><span class="dot"></span> Microsoft Excel</div>
